@@ -1,0 +1,41 @@
+[versions]
+plugin-android = "7.2.0"
+# @pin
+plugin-kotlin = "1.6.10"
+plugin-versions = "0.5.1"
+
+activity = "1.4.0"
+compose = "1.1.1"
+material3 = "1.0.0-alpha07"
+
+# @keep
+compileSdk = "32"
+# @keep
+minSdk = "21"
+# @keep
+targetSdk = "32"
+
+
+[libraries]
+androidx-compose-activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+androidx-compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+androidx-compose-material-icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+
+
+[bundles]
+app = [
+    "androidx-compose-activity",
+    "androidx-compose-material",
+    "androidx-compose-material-icons",
+    "androidx-compose-material3",
+    "androidx-compose-ui",
+    "androidx-compose-ui-tooling",
+]
+library = [
+    "androidx-compose.material3",
+    "androidx-compose-ui",
+    "androidx-compose-ui-tooling",
+]
