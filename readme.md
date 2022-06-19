@@ -12,7 +12,7 @@ the dependency either in Gradle
 
 ```groovy
 dependencies {
-    implementation 'net.zerotask.libraries.android:compose-menuactions:1.0.0'
+    implementation 'com.github.mainrs:android-compose-menuactions:1.0.0'
 }
 ```
 
@@ -20,7 +20,7 @@ or the new Kotlin DSL
 
 ```kotlin
 dependencies {
-    implementation("net.zerotask.libraries.android:compose-menuactions:1.0.0")
+    implementation("com.github.mainrs:android-compose-menuactions:1.0.0")
 }
 ```
 
